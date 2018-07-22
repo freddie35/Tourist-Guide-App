@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    
+
+    <title>main</title>
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="C:\Users\jennifer\Desktop\Phonegap\Tourist Guide App\www\m.css">
+
+</head>
+
+<body>
+    <div id="demo-bar-buttons">
+      <a class='header-button' href='/css-target-for-off-screen-designs/'></a> <a class='header-button' href='/examples/'></a>    
+      </div>
+
+
+<div role="main" id="bd">
+
+  <section id="home">
+ <center>
+
+
+<div id="loader">
+  <div class="davar">
+    <div class="counter"></div>
+  </div>
+</div>
+
+<div id="main" style=" background:maroon;
+    padding-top: 20px;">
+  <section>
+<br><br>
+<center><label style="font-size: 25px; color: white;" > Alaminos City Tourist Guide </label><br><br>
+<img src="C:\Users\jennifer\Desktop\My Application\Hundred Islands Alaminos Pangasinan (0).jpg" width="300" height="250" style="border-radius: 100px;">
+    <ul id="ul">
+<a href="home.html">
+      <button style="font-size: 30px; background-color:lightblue; color:green;">OPEN</button></center>
+    </ul>
+    </section>
+</div></a>
+
+<style>
+
+
+body{
+  
+  overflow:hidden;
+} 
+
+#loader{
+  background:transparent;
+  width:50px;
+  height:50px;
+  top:50%;
+  left:50%; 
+  position:absolute;
+  margin-top:-25px;
+  margin-left:-25px;
+  border: solid 5px rgb(20,160,200);
+  border-radius:50%;
+  opacity:1;
+}
+
+#loader.loaded{
+  -webkit-animation: 0.8s around ease-out forwards;
+  -moz-animation: 0.8s around ease-out forwards;
+  -ms-animation: 0.8s around ease-out forwards;
+  animation: 0.8s around ease-out forwards;
+}
+
+.davar{
+  background:maroon;
+  width:50px;
+  height:50px;
+  position:absolute;
+  border-radius:50%;
+}
+
+.davar .counter{
+  background:white;
+  width:50px;
+  height:50px;
+  top:50%;
+  left:50%;
+  position:absolute;
+  margin-top:-25px;
+  margin-left:-25px;
+  -webkit-transform:scale(0);
+  transform:scale(0);
+  display:block;
+  -moz-transition: all linear;
+  -ms-transition: all linear;
+  transition: all linear;
+  border-radius:50%;
+}
+
+@-webkit-keyframes around{
+  100%{
+    opacity:0;
+    -webkit-transform:translateY(-500px) scale3d(0,0,0);
+  }
+}
+
+@keyframes around{
+  100%{
+    opacity:0;
+    transform:translateY(-500px) scale3d(0,0,0);
+  }
+}
+
+#main{
+  background:rgb(254,255,255);
+  width:800px;
+  height:500px;
+  top:50%;
+  left:50%;
+  position:absolute;
+  margin-top:-250px;
+  margin-left:-400px;
+  border-radius:10px;
+  -webkit-transform:translateY(1000px);
+  transform:translateY(1000px);
+}
+
+#main.loaded{
+  -webkit-animation: 0.8s top linear forwards;
+  -moz-animation: 0.8s top linear forwards;
+  -ms-animation: 0.8s top linear forwards;
+  animation: 0.8s top linear forwards;
+}
+
+#main h1{
+  direction:ltr;
+  padding:10px;
+  background:rgba(150,150,150,0.1);
+  font-size:20px;
+  width:600px;
+  height:50px;
+  margin:auto;
+  color:rgba(0,160,200,1);
+  font-family:corbel;
+  padding-top:18px;
+  text-align:center;
+  -webkit-transform:translateY(-50px);
+  transform:translateY(-50px);
+  opacity:0;
+}
+
+
+#main .h1.loaded{
+  -webkit-animation: 0.1s topul linear forwards 1.2s;
+  -moz-animation: 0.1s topul linear forwards 1.2s;
+  -ms-animation: 0.1s topul linear forwards 1.2s;
+  animation: 0.1s topul linear forwards 1.2s;
+}
+
+#main ul{
+  margin-left: -15px;
+  margin-top: 30px;
+}
+
+#main ul li{
+  display:inline-block;
+  list-style:none;
+  margin:20px;
+}
+
+li{
+  background:rgba(20,160,200,.6);
+  width:200px;
+  height:200px;
+  border-radius:10px;
+  -webkit-transform:translateY(-50px);
+  transform:translateY(-50px);
+  opacity:0;
+}
+
+#ul.loaded li:nth-child(1){
+  -webkit-animation: 0.8s topul linear forwards 0.8s;
+  -mos-animation: 0.8s topul linear forwards 0.8s;
+  -ms-animation: 0.8s topul linear forwards 0.8s;
+  animation: 0.8s topul linear forwards 0.8s;
+}
+
+#ul.loaded li:nth-child(2){
+  -webkit-animation: 0.6s topul linear forwards 0.8s;
+  -mos-animation: 0.6s topul linear forwards 0.8s;
+  -ms-animation: 0.6s topul linear forwards 0.8s;
+  animation: 0.6s topul linear forwards 0.8s;
+}
+
+#ul.loaded li:nth-child(3){
+  -webkit-animation: 0.6s topul linear forwards 0.8s;
+  -mos-animation: 0.6s topul linear forwards 0.8s;
+  -ms-animation: 0.6s topul linear forwards 0.8s;
+  animation: 0.6s topul linear forwards 0.8s;
+}
+
+#main > section{
+  margin:auto;
+  width:770px;
+}
+
+@-webkit-keyframes top{
+  50%{
+    opacity:1 !important;
+    transform:translateY(-50px);
+  }
+
+  75%{
+    opacity:1 !important;
+    transform:translateY(25px);
+  }
+
+  100%{
+    opacity:1 !important;
+    transform:translateY(0px);
+  }
+}
+
+@-webkit-keyframes topul{
+  100%{
+    transform:translateY(0px);
+    opacity:1;
+  }
+}
+
+@keyframes top{
+  50%{
+    opacity:1 !important;
+    transform:translateY(-50px);
+  }
+
+  75%{
+    opacity:1 !important;
+    transform:translateY(25px);
+  }
+
+  100%{
+    opacity:1 !important;
+    transform:translateY(0px);
+  }
+}
+
+@keyframes topul{
+  100%{
+    transform:translateY(0px);
+    opacity:1;
+  }
+}
+</style>
+<script>
+
+window.requestAnimFrame = (function(){
+  return  window.requestAnimationFrame       || 
+    window.webkitRequestAnimationFrame || 
+    window.mozRequestAnimationFrame    || 
+    window.oRequestAnimationFrame      || 
+    window.msRequestAnimationFrame     || 
+    function(){
+    window.setTimeout(1000 / 40);
+  };
+})();
+
+var container = document.getElementById("loader"),
+    main = document.getElementById("main"),
+    ul = document.getElementById("ul"),
+    h1 = document.querySelector(".h1"),
+    progress = 0,
+    scale = container.children[0].children[0];
+
+animate();
+
+function animate(){
+  requestAnimFrame (animate);
+  draw();
+}
+
+function draw() {
+  scale.style.transform = "scale("+progress+")"; 
+
+  if (progress <= 0.95){
+    progress+= 0.01;
+  }
+
+  else {
+   container.classList.add("loaded");
+    main.classList.add('loaded');
+    ul.classList.add('loaded');
+   
+  }     
+}
+
+// simple preLoading
+</script>
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>

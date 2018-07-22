@@ -1,0 +1,155 @@
+
+#home{
+  background-color: height: 480px;
+  background: linear-gradient(to bottom,  maroon 0%, #ff9 50%, #eb5b4c 100%);
+  -webkit-background-clip: background;
+  color: transparent;    
+}
+
+     
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select { font-family: serif; color: #222; }
+body { margin: 0; font-size: 1em; line-height: 1.4; overflow-x: hidden; }
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+a { color: #00e; text-decoration: none; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+svg:not(:root) { overflow: hidden; }
+
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+
+/* ===== Primary Styles ========================================================
+   Author: MC
+   ========================================================================== */
+
+#hd { width: 460px; background: #dbe2ed; margin: 0 auto 40px; padding: 5px 10px;  }
+
+#hd h1 { color: #65686d; text-shadow: 0 1px 0 #fff;}
+
+#bd { position: relative; width: 320px; height: 480px; margin: 80px auto; overflow: hidden;
+  box-shadow: 0 0 10px #000;
+}
+
+.btn {
+  display: block;
+  padding: 5px 8px;
+  color: #fff!important;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 10px;
+  background: rgba(71,105,153,0.5);
+  border: 1px solid rgba(0,0,0,0.5);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.5), inset 0 1px 0 rgba(0,0,0,0.3);
+}
+
+a:active { background: rgba(1, 93, 230, 0.8); color: #fff; }
+
+header h1, .controls { color: #fff; }
+
+section header,
+section footer { background: #b5c0ce; height: 42px; line-height: 42px; border-bottom: 1px solid #3c4145;
+      background: darkgreen;
+      
+}
+
+section footer { position:absolute; left: 0; bottom: -50px; width: 100%;  border-top: 1px solid #3c4145; border-bottom: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header h1 { text-align: center; font-size: 19px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); }
+
+
+h1, h2, h3, h4, h5 { margin: 0;}
+
+h2 { font-size: 15px; color: #000; }
+
+.btnTopRight,
+.btnTopLeft { position: absolute; top: 4px;}
+
+.btnTopRight { right: 5px;}
+.btnTopLeft { left: 5px; }
+
+#home:target label[for="homeEditBtn"] { display: block; }
+
+label[for="homeEditBtn"] { width: 40px; z-index: 10; display: none;}
+
+
+
+:checked + label { background: rgba(34, 96, 221, 0.5)}
+
+.history { overflow-y: scroll; height: 435px; /* 66x6*/  }
+.history article {  position: relative; overflow: hidden;  }
+.history article label { display: block; position: absolute; left: -50px; top: 17px; width: 25px; height: 25px; color: #bd1421; font-size: 25px; line-height: 25px; text-shadow:  0 1px 1px #fff,  0 1px 2px #333; opacity: 0;
+  -webkit-transition: left 0.3s ease-in-out, opacity 0.5s ease-in-out;
+  -moz-transition: left 0.3s ease-in-out, opacity 0.5s ease-in-out;
+  -ms-transition: left 0.3s ease-in-out, opacity 0.5s ease-in-out;
+  -o-transition: left 0.3s ease-in-out, opacity 0.5s ease-in-out;
+  transition: left 0.3s ease-in-out, opacity 0.5s ease-in-out;
+}
+.history article a { display: block; padding: 6px 25px 5px 32px; border-bottom: 1px solid #e0e0e0;
+  -webkit-transition: padding 0.3s ease-in-out;
+  -moz-transition: padding 0.3s ease-in-out;
+  -ms-transition: padding 0.3s ease-in-out;
+  -o-transition: padding 0.3s ease-in-out;
+  transition: padding 0.3s ease-in-out;
+   }
+
+
+#bd > section {
+  width: 320px;
+  height: 480px;
+  position: absolute;
+  overflow: hidden;
+
+
+  }
+
+#home {
+  position: static;
+}
+
